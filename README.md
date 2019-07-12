@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# Node-Modules
+Inbuilt core node modules like path, os, file system, etc.
 
-You can use the [editor on GitHub](https://github.com/raghav4/Node-Modules/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+```js
+const path = require('path');
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+// The parse method returns all the information about the file, including the directory, root, base , extension and name.
+const pathObj = path.parse(__filename);
+console.log(pathObj);
 
-### Markdown
+// The basename returns the basename of the file. 
+// Syntax : path.basename(path, extension);
+// The second argument is the extension which is optional. But if we include the extension then it will be excluded in the result.
+const pathBase = path.basename(__filename, '.js');
+console.log(pathBase);
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+// dirname : returns the directory part of the path.
 
-```markdown
-Syntax highlighted code block
+const dirname = path.dirname(__filename);
+console.log(dirname);
 
-# Header 1
-## Header 2
-### Header 3
+// extname : returns the extension of the file.
 
-- Bulleted
-- List
+// isAbsolute : Checks if the path is absolute path or not. 
+//? Absolute Path : absolute path refers to the complete details needed to locate a file or folder, starting from the root element and ending with the other subdirectories.
+//? Aka also known as an absolute pathname or full path,
 
-1. Numbered
-2. List
+// join : join two or more part of the path
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/raghav4/Node-Modules/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+// path.relative() : Accepts 2 paths as arguments. Returns the the relative path from the first path to the second, based on the current working directory.```
