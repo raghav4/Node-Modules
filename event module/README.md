@@ -1,0 +1,1 @@
+An **Event** is a signal that indicates something has happened.
