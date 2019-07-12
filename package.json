@@ -1,0 +1,23 @@
+{
+  "name": "Node-Modules",
+  "version": "1.0.0",
+  "description": "Inbuilt node modules like path, os, file system, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghav4/Node-Modules.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raghav4/Node-Modules/issues"
+  },
+  "homepage": "https://github.com/raghav4/Node-Modules#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
